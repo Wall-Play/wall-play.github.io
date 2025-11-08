@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WallPlay - Le wallpaper esport</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <img src="images/logo.png" alt="WallPlay Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#concept">Le Concept</a></li>
+                <li><a href="#wallpapers">Wallpapers</a></li>
+                <li><a href="#pricing">Tarifs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="images/logo-large.png" alt="WallPlay" class="hero-logo">
+            <p class="tagline">Design Esport Exclusif</p>
+            <p class="subtitle">Des wallpapers uniques pour les passionnés d'esport</p>
+            <a href="#wallpapers" class="cta-button">Découvrir</a>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="section" id="concept">
+        <h2 class="section-title">Qu'est-ce que WallPlay ?</h2>
+        <div class="concept fade-in">
+            <div class="concept-content">
+                <h2>Présentation de WallPlay</h2>
+                <p>
+                    <strong>WallPlay</strong> est un projet créatif dédié au <strong>design esport</strong>,
+                    conçu pour rassembler les fans d'esport autour de <strong>wallpapers uniques</strong>.
+                </p>
+                <p>
+                    Chaque mois, un <strong>nouveau wallpaper exclusif</strong> est conçu et produit avec 
+                    un soin artistique particulier. Ces visuels célèbrent la <strong>culture et la passion 
+                    de l'esport</strong>, tout en offrant un design moderne et distinctif.
+                </p>
+                <p>
+                    <strong>WallPlay</strong>, c'est avant tout une manière de <strong>valoriser la passion 
+                    qui anime la scène esport</strong>, en transformant cette énergie en œuvres visuelles exclusives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wallpapers Section -->
+    <section class="section" id="wallpapers">
+        <h2 class="section-title">Les Wallpapers</h2>
+        
+        <!-- Filtres -->
+        <div class="wallpaper-filters">
+            <button class="filter-btn active" data-filter="all">
+                Tous
+            </button>
+            <button class="filter-btn" data-filter="free">
+                Gratuit
+            </button>
+            <button class="filter-btn" data-filter="paid">
+                Payant
+            </button>
+            <div class="filter-search">
+                <input type="text" id="search-wallpaper" placeholder="Rechercher un wallpaper...">
+            </div>
+        </div>
+
+        <!-- Carrousel de wallpapers -->
+        <div class="wallpaper-carousel">
+            <!-- Navigation gauche -->
+            <button class="carousel-nav carousel-prev" id="carousel-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <!-- Container des wallpapers -->
+            <div class="gallery-container" id="wallpaper-gallery">
+                <!-- Loader pendant le chargement -->
+                <div class="loading-placeholder">
+                    <div style="display: inline-block; width: 50px; height: 50px; border: 3px solid rgba(150, 237, 0, 0.3); border-top-color: var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem; font-size: var(--font-md);">Chargement des wallpapers...</p>
+                </div>
+            </div>
+
+            <!-- Navigation droite -->
+            <button class="carousel-nav carousel-next" id="carousel-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Indicateurs de position -->
+        <div class="carousel-indicators" id="carousel-indicators">
+            <!-- Les dots seront générés dynamiquement -->
+        </div>
+
+        <!-- Compteur -->
+        <div class="carousel-counter">
+            <span id="current-pack">1</span> / <span id="total-packs">1</span>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <h2 class="section-title">Nos Tarifs</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card fade-in">
+                <h3>Version Mobile</h3>
+                <div class="price">5€</div>
+                <ul class="wallpaper-features">
+                    <li>Design haute qualité</li>
+                    <li>Pseudo personnalisé</li>
+                    <li>Format smartphone</li>
+                    <li>Livraison instantanée</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card fade-in">
+                <h3>Version PC</h3>
+                <div class="price">10€</div>
+                <ul class="wallpaper-features">
+                    <li>Design haute résolution</li>
+                    <li>Pseudo personnalisé</li>
+                    <li>Multi-formats disponibles</li>
+                    <li>Livraison instantanée</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card fade-in">
+                <h3>Pack Complet</h3>
+                <div class="price">13€</div>
+                <ul class="wallpaper-features">
+                    <li>Version PC + Mobile</li>
+                    <li>Pseudo personnalisé</li>
+                    <li>Tous les formats</li>
+                    <li>Économisez 2€</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="concept fade-in">
+            <div class="concept-content" style="text-align: center;">
+                <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                    Pour obtenir un visuel ou poser une question, contactez-moi :
+                </p>
+                <a href="https://x.com/WazaKissDesign" target="_blank" class="cta-button" style="margin: 1rem;">Twitter</a>
+                <a href="https://discord.gg/SNvcaKK7yk" target="_blank" class="cta-button" style="margin: 1rem;">Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="images/logo-large.png" alt="WallPlay" class="footer-logo-main">
+            
+            <div class="social-links">
+                <a href="https://x.com/WazaKissDesign" target="_blank">Twitter</a>
+                <a href="https://discord.gg/SNvcaKK7yk" target="_blank">Discord</a>
+            </div>
+
+            <!-- Credits Section -->
+            <div class="footer-credits">
+                <!-- Erlow - Développement -->
+                <div class="credit-card">
+                    <div class="credit-icon">
+                        <img src="images/logo-erlow.png" alt="Erlow" class="credit-logo">
+                    </div>
+                    <div class="credit-info">
+                        <span class="credit-label">Développement du site</span>
+                        <a href="https://erlinks.github.io/" target="_blank" class="credit-name">Erlow</a>
+                    </div>
+                </div>
+
+                <!-- Wazakiss - Wallpapers -->
+                <div class="credit-card">
+                    <div class="credit-icon">
+                        <img src="images/logo-wazakiss.png" alt="Wazakiss" class="credit-logo">
+                    </div>
+                    <div class="credit-info">
+                        <span class="credit-label">Création des wallpapers</span>
+                        <a href="https://x.com/WazaKissDesign" target="_blank" class="credit-name">Wazakiss</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-copyright">&copy; 2025 WallPlay - Design Esport Exclusif</p>
+            
+            <p class="footer-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">Conditions d'utilisation</a>
+                <a href="#">Politique de Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Chargement du système de wallpapers -->
+    <script src="wallpapers.js"></script>
+    
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animation pour les éléments statiques
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observer les éléments statiques au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fade-in:not(.wallpaper-card)').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Navigation background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
+

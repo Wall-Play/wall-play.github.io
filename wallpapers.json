@@ -1,0 +1,35 @@
+{
+  "packs": [
+    {
+      "id": "november-2025",
+      "title": "Wallpaper Novembre 2025",
+      "date": "2025-11",
+      "free": true,
+      "pc": {
+        "price": 10,
+        "image": "images/november-2025/november-2025-pc.png",
+        "features": [
+          "Haute résolution optimisée pour PC",
+          "Design exclusif esport",
+          "Pseudo personnalisé inclus",
+          "Format: 2560x1440 et plus"
+        ]
+      },
+      "mobile": {
+        "price": 5,
+        "image": "images/november-2025/november-2025-mobile.png",
+        "features": [
+          "Optimisé pour smartphones",
+          "Design exclusif esport",
+          "Pseudo personnalisé inclus",
+          "Format: 1080x1920 et plus"
+        ]
+      },
+      "pack": {
+        "price": 13,
+        "discount": 2
+      }
+    }
+  ]
+}
+
